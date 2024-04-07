@@ -1,0 +1,212 @@
+<%- include('base/header') -%>
+
+<header class="header" id="home">
+
+  <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
+    <div class="container">
+
+      <a class="navbar-brand js-scroll-trigger" href="#page-top">
+
+        <span class="text-info font-weight-bold">S</span>HRIPAD
+        <span class="text-info font-weight-bold">I</span>DLI
+        <span class="text-info font-weight-bold">C</span>ENTER
+      
+      </a>
+
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#home">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#about">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#chefs">Chefs</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#Menus">Menus</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#reserve">Contact Us </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="users/login">Login </a>
+          </li>
+          <% if (user) { %>
+          <li class="nav-item mr-auto">
+            <a class="nav-link js-scroll-trigger" href="/users/profile">Profile <img src="<%= '/img/' + user.avatar %>" class="rounded-circle" style="width: 32px;height: 30px;" alt="...">
+            </a>
+          </li>
+          <% } %>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <div class="jumbotron" style="background-color: #0d122fa3;height: 100%;">
+    <div class="m-5" style="position: relative;top: 8vw;">
+      <p class="display-2 lead text-white text-center" style="border-bottom:1px solid #007bff;">
+        <span class="text-info font-weight-bold">S</span>HRIPAD
+        <span class="text-info font-weight-bold">I</span>DLI
+        <span class="text-info font-weight-bold">C</span>ENTER
+      
+      
+      
+      </p>
+      <p class="lead text-white text-center">South Indian Cuisine Through Our Signature Dish <br>
+        The Humble Yet Iconic <span class="text-info font-weight-bold">IDLI CENTER</span></p>
+    </div>
+  </div>
+ 
+  </header>
+
+  <section id="about" class="m-5">
+    <div class="container">
+      <div class="row bg-white">
+        <div class="col-lg-6 mx-aut mt-3">
+          <p><br><br><br><br></p>
+            <h4 class="m-3">Welcome to Shripad Idli Centre: Your Destination for Authentic South Indian Cuisine</h4>
+
+            <p class="parag text-left m-3">From the soft and fluffy idlis to the crispy dosas, 
+              every dish is crafted with care using time-honored recipes passed down 
+              through generations.</p>
+
+            <p class="parag text-left m-3"> Our commitment to quality is unwavering. We source
+             the freshest ingredients, handpicked for their flavor and authenticity, 
+             ensuring that each dish captures the essence of South Indian cuisine. 
+             Whether you're craving the tangy goodness of sambar or the fiery kick of chutneys,
+             our menu offers a diverse range of options to tantalize your taste buds.</p>
+
+             <p class="parag text-left m-3"> From our kitchen to your table, we promise an 
+              unforgettable dining experience that will keep you coming back for more.</p>
+
+        </div>
+        <div class="col-lg-6 mx-auto">
+            <img src="img/about.png" class="card-img-top" alt="...">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="chefs" class="m-5">
+    <div class="container">
+      <div class="row bg-white">
+        <div class="col-lg-12 mx-auto mb-2">
+          <br><br><br>
+                <h4 class="text-center mt-4">Meet our chefs</h4>
+                <p class="card-text text-center"><small class="text-muted">THEY ARE NICE & FRIENDLY</small></p>
+                <div class="card-group">
+                        <div class="card m-2 hovereffect">
+                          <img src="sys/chef-1.jpg" class="card-img-top" alt="...">
+                          <div class="overlay">
+                                <h2>Momo</h2>
+                          </div>
+                        </div>
+                        <div class="card m-2 hovereffect">
+                          <img src="sys/chef-2.jpg" class="card-img-top" alt="...">
+                          <div class="overlay">
+                                <h2>Nagu</h2>
+                          </div>
+                        </div>
+                        <div class="card m-2 hovereffect">
+                          <img src="sys/chef-3.jpg" class="card-img-top" alt="...">
+                          <div class="overlay">
+                                <h2>Shivam</h2>
+                          </div>
+                        </div>
+                        <div class="card m-2 hovereffect">
+                          <img src="sys/chef-4.jpg" class="card-img-top" alt="...">
+                          <div class="overlay">
+                                <h2>Sintraay</h2>
+                          </div>
+                        </div>
+                        <div class="card m-2 hovereffect">
+                          <img src="sys/chef-5.jpg" class="card-img-top" alt="...">
+                          <div class="overlay">
+                                <h2>Keyur</h2>
+                          </div>
+                        </div>
+                      </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="Menus" class="m-5">
+    <div class="container">
+      <div class="row bg-white">
+        <div class="col-lg-12 mx-auto">
+            <h4 class="text-center mt-4">Our Menu</h4>
+            <p class="card-text text-center"><small class="text-muted">DINING | BREAKFAST</small></p>
+            <div class="col-lg-12 mx-auto mt-3">
+              <div class="d-flex flex-row bd-highlight justify-content-center">
+                  <div class="bd-highlight hovereffect"><img src="sys/menu-1.jpg" class="h-100 w-100" alt="...">
+                    <div class="overlay">
+                            <h2>STEAMED IDLI</h2>
+                      </div>
+                </div>
+                  <div class="bd-highlight hovereffect"><img src="sys/menu-2.jpg" class="h-100 w-100" alt="...">
+                    <div class="overlay">
+                            <h2>DOSA (MASALA/SADA)</h2>
+                      </div>
+                  </div>
+                  <div class="bd-highlight hovereffect"><img src="sys/menu-3.jpg" class="h-100 w-100" alt="...">
+                    <div class="overlay">
+                            <h2>KADAK CHAI</h2>
+                      </div>
+                  </div>
+              </div>
+              <div class="d-flex flex-row bd-highlight justify-content-center">
+                  <div class="bd-highlight hovereffect"><img src="sys/menu-4.jpg" class="h-100 w-100" alt="...">
+                      <div class="overlay">
+                              <h2>MEDU VADA</h2>
+                        </div>
+                  </div>
+                  <div class="bd-highlight hovereffect"><img src="sys/menu-5.jpg" class="h-100 w-100" alt="...">
+                    <div class="overlay">
+                            <h2>UPMA</h2>
+                      </div>
+                  </div>
+              </div>
+            </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer id="reserve" class="bg-white">
+      <hr>
+      <div class="container">
+        <div class="row mt-5">
+          <div class="col-sm">
+            <h4 class="mb-3">Find Us</h4>
+            <p class="parag text-left">Kasba Peth Rd</p>
+            <p class="parag text-left">Pune, Maharashtra</p>
+            <p class="parag text-left">India</p>
+          </div>
+          <div class="col-sm">
+            <h4 class="mb-3">Open Hours</h4>
+            <p class="parag text-left">Monday to Friday | 7:00 AM - 9:00 PM</p>
+            <p class="parag text-left">Saturday - Sunday | 11:00 AM - 10:00 PM</p>
+          </div>
+          <div class="col-sm">
+            <h4 class="mb-3">Reservation</h4>
+            <p class="parag text-left">+91 91759 40454 | +91 96371 88701</p>
+            <p class="parag text-left">info@sic.com</p>
+            <p class="parag text-left">LINE: +42069 02496</p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-sm">
+            <p class="m-5 parag text-center">Copyright &copy; Shripad Idli Center 2024</p>
+          </div>
+        </div>
+      </div>
+
+    </footer>
+
+<%- include('base/footer') -%>
