@@ -36,9 +36,9 @@ router.get('/new',isAuthenticated, billController.render_bill)
 * route for post bill
 */
 router.post('/new',isAuthenticated, [
-    check('sub_total').isLength({min: 5}).withMessage('sub total should be more than 5 char'),
-    check('vat').isLength({min: 5}).withMessage('alcohol should be more than 5 char'),
-    check('total').isLength({min: 5}).withMessage('type should be more than 5 char')
+    check('sub_total').isLength({min: 1}).withMessage('sub total should be more than 5 char'),
+    check('vat').isLength({min: 1}).withMessage('alcohol should be more than 5 char'),
+    check('total').isLength({min: 1}).withMessage('type should be more than 5 char')
 ] , billController.new_bill)
 
 /**

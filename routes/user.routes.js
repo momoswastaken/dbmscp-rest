@@ -66,10 +66,10 @@ router.post('/login',
 * route for sign up form 
 */
 router.get('/new',isAuthenticatedAdmin,[
-  check('firstname').isLength({min: 5}).withMessage('firstname should be more than 5 char'),
-  check('lastname').isLength({min: 5}).withMessage('lastname should be more than 5 char'),
-  check('contact').isLength({min: 5}).withMessage('contact should be more than 5 char'),
-  check('email').isLength({min: 5}).withMessage('email should be more than 5 char')
+  check('firstname').isLength({min: 1}).withMessage('firstname should be more than 5 char'),
+  check('lastname').isLength({min: 1}).withMessage('lastname should be more than 5 char'),
+  check('contact').isLength({min: 1}).withMessage('contact should be more than 5 char'),
+  check('email').isLength({min: 1}).withMessage('email should be more than 5 char')
 ] , userController.render_user)
 
 /**
