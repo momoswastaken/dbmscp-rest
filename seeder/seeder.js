@@ -5,7 +5,7 @@
 const db = require('../config/database')
 const User = require('../models/User')
 const Bill = require('../models/Bill')
-const booking = require('../models/booking')
+const booking = require('../models/Booking')
 const Chef = require('../models/Chef')
 const Customer = require('../models/Customer')
 const Waiter = require('../models/Waiter')
@@ -22,7 +22,7 @@ let users = [
         LName : "Parkar",
         Contact : "90225",
         email : "momo@gmail.com",
-        password : "$2a$08$GwAHBgid3dyUSMDHvve43uS9hJemE5wiLaRSud9FinAnX2Fu2Wjp2",
+        password : "$2a$08$GwAHBgid3dyUSMDHvve43uS9hJemE5wiLaRSud9FinAnX2Fu2Wjp2", //momo
         avatar : "profile.png",
         created_at : ("2020-04-13T13:44:30.521+00:00")
     })
